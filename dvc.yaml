@@ -1,0 +1,10 @@
+stages:
+  preprocess:
+    cmd: python main.py
+    deps:
+      - data/raw/Dry_Bean_Dataset.csv
+      - src/preprocessing.py
+      - src/train.py
+      - src/evaluate.py
+    outs:
+      - models/random_forest.pkl
