@@ -63,13 +63,37 @@ https://archive.ics.uci.edu/ml/datasets/Dry+Bean+Dataset
 ai-multiclass-lab/
 │
 ├── data/
+│   ├── raw/
+│   └── processed/
+│
 ├── notebooks/
+│   └── multiclass_lab.ipynb
+│
+├── experiments/
+│   ├── exp_01_baseline_rf.py
+│   ├── exp_02_tuned_rf.py
+│   ├── exp_03_balanced_rf.py
+│   ├── exp_04_adaboost.py
+│   └── experiment_results.md
+│
 ├── src/
+│   ├── preprocessing.py
+│   ├── train.py
+│   ├── evaluate.py
+│   ├── config.py
+│   └── utils.py
+│
 ├── models/
+│
 ├── reports/
+│   └── figures/
+│
 ├── mlruns/
+│
 ├── README.md
 ├── requirements.txt
+├── .gitignore
+├── dvc.yaml
 └── main.py
 
 ---
